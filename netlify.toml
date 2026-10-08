@@ -1,0 +1,12 @@
+[build]
+  # The site lives at the repository root. This overrides the "test" base
+  # directory set in the Netlify UI, which does not exist in this repo.
+  base = "/"
+  publish = "."
+  command = ""
+
+# site.html is the homepage
+[[redirects]]
+  from = "/"
+  to = "/site.html"
+  status = 200
